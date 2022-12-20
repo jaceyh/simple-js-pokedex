@@ -1,21 +1,18 @@
 /* || GENERAL STYLES */
-@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@300;400;500&display=swap');
 
 body {
     background: linear-gradient(to bottom right, #024, #402);
     padding: 10px;
+    font-family:'Asap Condensed', sans-serif;
     font-weight: 400;
+    font-size: x-large;
+    letter-spacing: 1px;
+    line-height: 150%;
+    text-align: left;
+    color: #fff;
 }
 
 .pokemon-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
-    margin: 0;   
-}
-
-.project-list__item {
     padding: 10px;
     margin: 20px;
-    text-align: center;
   }
