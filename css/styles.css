@@ -1,0 +1,22 @@
+/* || GENERAL STYLES */
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@300;400;500&display=swap');
+
+:root {
+    --primary-color: #f1f0b9;
+    --secondary-color: #d89d97;
+    --tertiary-color: #F6D5A3;
+    --dark-grey: #535353;
+    --background-color: linear-gradient(to bottom right, #024, #402);
+    --contrast-color:  #66ddff;
+    --main-font-size: 16px;
+    --h-font-weight: 600;
+  }
+
+
+body {
+    height: 100%;
+    padding-top: 10px;
+    background: linear-gradient
+      (to bottom right,#024,#402);
+    font-weight: 400;
+  }
