@@ -36,3 +36,13 @@ for (let i=0; i < pokemonList.length; i++){
         document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + ") - Woah, that's HUGE!" + "<br>")
     }
 }
+
+//for function to print array
+function printArrayDetails(){
+    for (let i = 0; i < pokemonList.length; i++){
+        document.write("<p>" + pokemonList[i].name + "</p>" + "<p> Height: " + pokemonList[i].height + "</p>" + "<p> Type: " + pokemonList[i].type + "</p>" + "<br>");
+      // printing pokemonList[i]’s other details
+    }
+}
+
+printArrayDetails();
