@@ -1,22 +1,22 @@
-let ampharos = {
-    name: "Ampharos",
-    height: 4.58,
-    type: "electric",
-}
+let pokemonList = [
+    {
+        name: "Ampharos",
+        height: 4.58,
+        type: "electric",
+    },
 
-let hooh = {
-    name: "Ho-oh",
-    height: 12.5,
-    type: ["fire","flying"],
-}
+    {
+        name: "Ho-oh",
+        height: 12.5,
+        type: ["fire","flying"],
+    },
 
-let mewtwo = {
-    name: "Mewtwo",
-    height : 6.58,
-    type: "psychic",
-}
-
-let pokemonList = [ampharos, hooh, mewtwo]
+    {
+        name: "Mewtwo",
+        height : 6.58,
+        type: "psychic",
+    }
+]
 
 /*print pokemon names + heights
 
