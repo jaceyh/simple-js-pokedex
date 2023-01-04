@@ -1,4 +1,6 @@
-let pokemonList = [
+let pokemonRepository = (function () {
+    
+    let pokemonList = [
     {
         name: "Ampharos",
         height: 4.58,
@@ -17,6 +19,20 @@ let pokemonList = [
         type: "psychic",
     }
 ]
+
+    function getAll (){
+        return pokemonList;
+    }
+    function add (pokemon) {
+        pokemonList.push(pokemon);
+    }
+
+    return {
+        getAll: getAll,
+        add: add
+    }
+})()
+
 
 /*print pokemon names + heights
 
