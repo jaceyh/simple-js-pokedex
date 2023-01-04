@@ -56,18 +56,14 @@ for (let i=0; i < pokemonList.length; i++){
         }
     }
 
-//for function to print array
+
+//function to print array items and details
 function printArrayDetails(){
     for (let i = 0; i < pokemonList.length; i++){
         document.write("<p>" + pokemonList[i].name + "</p>" + "<p> Height: " + pokemonList[i].height + "</p>" + "<p> Type: " + pokemonList[i].type + "</p>" + "<br>");
-      // printing pokemonList[i]’s other details
     }
 }
 
-printArrayDetails();
-
-
-pokemonList.forEach(function(){
-    document.write("<p> Name: " + pokemonList[i].name + "</p" + "<p> Height: " + pokemonList[i].height + "</p>" + "<p> Type: " + pokemonList[i].type + "</p>" + "<br>");
+pokemonRepository.getAll().forEach(function (){
+    //document.write("<p> Name: " + pokemonList[i].name + "</p" + "<p> Height: " + pokemonList[i].height + "</p>" + "<p> Type: " + pokemonList[i].type + "</p>" + "<br>");
 });
-
