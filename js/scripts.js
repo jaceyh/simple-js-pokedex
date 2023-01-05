@@ -1,4 +1,4 @@
-let pokemonRepository = (function () {
+let pokemonRepository = (function (pokemon) {
     
     let pokemonList = [
     {
@@ -59,18 +59,16 @@ for (let i=0; i < pokemonList.length; i++){
 
 
 //function to print array items and details
-function printArrayDetails(){
-    for (let i = 0; i < pokemonList.length; i++){
-        document.write("<p>" + pokemonList[i].name + "</p>" + "<p> Height: " + pokemonList[i].height + "</p>" + "<p> Type: " + pokemonList[i].type + "</p>" + "<br>");
-    }
-}
+//function printArrayDetails(){
+    //for (let i = 0; i < pokemonList.length; i++){
+        //document.write("<p>" + pokemonList[i].name + "</p>" + "<p> Height: " + pokemonList[i].height + "</p>" + "<p> Type: " + pokemonList[i].type + "</p>" + "<br>");
+    //}
+//}
 
-pokemonRepository.getAll().forEach(function (){
-    //document.write("<p> Name: " + pokemonList[i].name + "</p" + "<p> Height: " + pokemonList[i].height + "</p>" + "<p> Type: " + pokemonList[i].type + "</p>" + "<br>");
-
-    if(pokemonList[i].height <= 10){
-        document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + ")" + "<br>");
+pokemonRepository.getAll().forEach(function (pokemon){
+    if(pokemon.height <= 10){
+        document.write("<p> Name: " + pokemon.name + "</p> Height: " + pokemon.height + "</p>" + "<p> Type: " + pokemon.type + "</p>" + "<br>");
     } else {
-        document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + ") - Woah, that's HUGE!" + "<br>")
+        document.write("<p> Name: " + pokemon.name + "</p>" + "<p> Height: " + pokemon.height +  "- Woah, that's HUGE! </p>" + "<p> Type: " + pokemon.type + "</p>" +"<br>")
     }
 });
