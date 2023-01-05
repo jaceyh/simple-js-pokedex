@@ -46,15 +46,16 @@ for (let i=0; i < pokemonList.length; i++){
 +/
 
 // for loop for length of array */
-// set condition for specific key-value of objects in array +/
+// set condition for specific key-value of objects in array */
 // <br> tag to display each object on a new line */
-    for (let i=0; i < pokemonList.length; i++){
-        if(pokemonList[i].height <= 10){
-            document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + ")" + "<br>");
-        } else {
-            document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + ") - Woah, that's HUGE!" + "<br>")
-        }
-    }
+
+    //for (let i=0; i < pokemonList.length; i++){
+        //if(pokemonList[i].height <= 10){
+            //document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + ")" + "<br>");
+        //} else {
+            //document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + ") - Woah, that's HUGE!" + "<br>")
+        //}
+    //}
 
 
 //function to print array items and details
@@ -66,4 +67,10 @@ function printArrayDetails(){
 
 pokemonRepository.getAll().forEach(function (){
     //document.write("<p> Name: " + pokemonList[i].name + "</p" + "<p> Height: " + pokemonList[i].height + "</p>" + "<p> Type: " + pokemonList[i].type + "</p>" + "<br>");
+
+    if(pokemonList[i].height <= 10){
+        document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + ")" + "<br>");
+    } else {
+        document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + ") - Woah, that's HUGE!" + "<br>")
+    }
 });
