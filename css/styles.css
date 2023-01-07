@@ -23,8 +23,8 @@ button {
     width: 320px;
     margin: 10px;
     background-color: transparent;
-    border-color: #ffa260;
-    border-width: 3px;
+    border-width: 5px;
+    border: solid  #ffa260;
     box-shadow: none;
     color: #fff;
     font-family: 'Asap Condensed', sans-serif;
