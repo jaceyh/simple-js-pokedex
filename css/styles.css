@@ -15,4 +15,22 @@ body {
 .pokemon-list {
     padding: 10px;
     margin: 20px;
+}
+
+
+button {
+    display: block;
+    width: 320px;
+    margin: 10px;
+    background-color: transparent;
+    border-color: #ffa260;
+    border-width: 3px;
+    box-shadow: none;
+    color: #fff;
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: x-large;
+    }
+
+.button:hover {
+    box-shadow: inset 0 -3.25em 0 0 var(--hover);
   }
