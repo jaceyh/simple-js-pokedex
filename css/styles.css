@@ -2,6 +2,8 @@
 
 body {
     background: linear-gradient(to bottom right, #024, #402);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     padding: 10px;
     font-family:'Asap Condensed', sans-serif;
     font-weight: 400;
@@ -36,5 +38,5 @@ button {
 
 button:hover {
     background-color: #ffa260;
-    color:#402
+    color:#024;
 }
