@@ -36,6 +36,7 @@ let pokemonRepository = (function (pokemon) {
         let container = document.querySelector('.pokemon-list');
         let button = document.createElement("button");
         button.innerText = pokemon.name;
+        button.classList.add("button-class");
         container.appendChild(button); 
     }
 
