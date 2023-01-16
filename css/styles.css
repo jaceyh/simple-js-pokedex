@@ -77,21 +77,29 @@ button:hover {
     padding: 15px;
     width: 100%;
     max-width: 700px;
-    text-align: left;
+    text-align: center;
 }
 
 .modal-close {
     float: right;
+    margin-right:0;
     border: 0;
     background: none;
     color: #ffa260;
     text-decoration: underline;
+    text-align: right;
   }
   
   .modal h1 {
     margin-top: 0;
+    text-align: left;
   }
   
   .modal p {
+    padding-top:10%;
     margin-bottom: 0;
+  }
+
+  .modal img {
+    height: auto;
   }
