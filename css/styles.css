@@ -44,7 +44,7 @@ button:hover {
 /* MODAL STYLES */
 
 #modal-container {
-  display: none;
+  display:none;
 }
 
 #modal-container.is-visible {
@@ -60,13 +60,14 @@ button:hover {
   /* to show it above other content */
   z-index: 999; 
 
-  /* to allow scrolling if the screen is not high enough*/
+  /* to allow scrolling if the screen is not high enough */
   overflow: auto; 
 
   /* this is used to center the modal */
   display: grid;
   text-align: center;
 }
+
 
 .modal {
     margin: auto;
