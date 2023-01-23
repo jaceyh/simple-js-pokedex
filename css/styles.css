@@ -1,5 +1,9 @@
 /* || GENERAL STYLES */
 
+.brand-title {
+  font-size:xx-large;
+}
+
 body {
     background: linear-gradient(to bottom right, #024, #402);
     background-repeat: no-repeat;
