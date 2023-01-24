@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jacey Hallock's Simple JS Pokedex</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,10 +13,9 @@
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@300;400;500&display=swap');
         </style>
-        <title>Simple JS Pokedex</title>
     </head>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">
                 <img src="img/pokeicon.png" width="35" height="35" class="d-inline-block align-top" alt="">
                   <span class="brand-title">Pokedex</span>
@@ -29,20 +29,43 @@
                   <a class="nav-link" href="https://jaceyh.github.io/simple-js-pokedex/">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="https://pokeapi.co/">Source</a>
+                  <a class="nav-link" href="https://pokeapi.co/">Source - PokeAPI</a>
                 </li>
               </ul>
             </div>
         </nav>
     </header>
     <body>
-        <ul class="pokemon-list list-group"> </ul>
+        <ul class="pokemon-list list-group"></ul>
+
+        <!--bootstrap modal-->
+        <div class="modal fade" id="pokemonModal" tabindex="-1" role="dialog" aria-labelledby="pokemonModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title" id="pokemonModalLabel">Modal title</h1>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+        <!-- OLD modal html structure
         <button id="show-modal">Show modal</button>
         <div id="modal-container">
             <div class="modal">
                 <button class="modal-close">Close</button>
             </div>
         </div>
+        -->
         <script> src="js/promise-polyfill.js"</script>
         <script> src="js/fetch-polyfill.js"</script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
