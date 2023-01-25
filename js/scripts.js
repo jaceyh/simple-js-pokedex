@@ -25,7 +25,7 @@ let pokemonRepository = (function () {
         })
     }
 
-    //function to GET and details from API
+    //function to GET and details from API (will call this on pokemon-button click)
     function loadDetails(item) {
         let url = item.detailsUrl;
         return fetch(url).then(function (response) {
@@ -34,8 +34,15 @@ let pokemonRepository = (function () {
             // Now we add the details to the item
             item.imageUrl = details.sprites.front_default;
             item.height = details.height;
-            item.types = details.types;
+            item.weight = details.weight;
 
+            let typeArray = [];
+            details.types.forEach(function (item) {
+              typeArray.push(item.type.name);
+            });
+            // Defining separator between printed array items
+            item.types = typeArray.join(', ');
+          
     //catch errors function
         }).catch(function (e) {
             console.error(e);
@@ -99,7 +106,10 @@ let pokemonRepository = (function () {
         imgElement.attr("src", pokemon.imageUrl);
 
         //create element for height in modal content
-        let heightElement = $('<p>' + 'Height: ' + pokemon.height + '</p>');       
+        let heightElement = $('<p>' + 'Height: ' + pokemon.height + '</p>'); 
+        
+        //create element for height in modal content
+        let weightElement = $('<p>' + 'Weight: ' + pokemon.weight + '</p>');
 
         //create element for height in modal content
         let typeElement = $('<p>' + 'Type: ' + pokemon.types + '</p>');
@@ -108,6 +118,7 @@ let pokemonRepository = (function () {
         modalTitle.append(nameElement);
         modalBody.append(imgElement);
         modalBody.append(heightElement);
+        modalBody.append(weightElement);
         modalBody.append(typeElement);
     }
 
