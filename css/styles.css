@@ -52,8 +52,19 @@ button:hover {
 }
 
 
-/* NEW MODAL STYLE OVERRIDES
+/* NEW MODAL STYLE OVERRIDES */
+.fade:not(.show) {
+  background-color: #024;
+  opacity: 1;
+}
 
+.modal.show {
+  display: block;
+}
+
+.modal-content {
+  background: linear-gradient(to top left, #024, #402);
+}
 
 
 

@@ -83,6 +83,7 @@ let pokemonRepository = (function () {
 
     // NEW showModal function for Bootstrap
     function showModal(pokemon){
+        const ModalCntr = $('.modal');
         let modalBody = $('.modal-body');
         let modalTitle = $('.modal-title');
 
@@ -103,6 +104,7 @@ let pokemonRepository = (function () {
         //create element for height in modal content
         let typeElement = $('<p>' + 'Type: ' + pokemon.types + '</p>');
 
+        ModalCntr.addClass('show');
         modalTitle.append(nameElement);
         modalBody.append(imgElement);
         modalBody.append(heightElement);
