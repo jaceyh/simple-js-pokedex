@@ -135,3 +135,9 @@ pokemonRepository.loadList().then(function() {
         pokemonRepository.addListItem(pokemon);
     });
 });
+
+$(function () {
+    $('.close').on('click', function () {
+        modalCntr.hide();
+    })
+})
