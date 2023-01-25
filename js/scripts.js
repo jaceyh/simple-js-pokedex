@@ -59,19 +59,6 @@ let pokemonRepository = (function () {
         pokemonList.push(pokemon);
     }
 
-    /* ORIGINAL function that adds pokemon to pokemonList in button format
-    function addListItem(pokemon){
-        let container = document.querySelector('.pokemon-list');
-        let button = document.createElement("button");
-        button.innerText = pokemon.name;
-        button.classList.add("button-class");
-        container.appendChild(button);
-        button.addEventListener('click', function() {
-            showDetails(pokemon);
-        });
-    }
-*/
-
 
     function addListItem(pokemon){
         let container = $('.pokemon-list')
@@ -122,59 +109,6 @@ let pokemonRepository = (function () {
         modalBody.append(typeElement);
     }
 
-    /* OLD function to create modal
-    function showModal(title, text, image) {
-        let modalContainer = document.querySelector('#modal-container');
-        modalContainer.classList.add('is-visible');
-
-        //clear all existing modal content
-        modalContainer.innerHTML = ' ';
-
-        let modal = document.createElement('div');
-        modal.classList.add('modal');
-
-        //add new modal content
-
-        //close button
-        let closeButtonElement = document.createElement('button');
-        closeButtonElement.classList.add('modal-close');
-        closeButtonElement.innerText = 'Close';
-        closeButtonElement.addEventListener('click', hideModal);
-
-        //title
-        let titleElement = document.createElement('h1');
-        titleElement.innerText = title;
-        //text
-        let contentElement = document.createElement('p');
-        contentElement.innerText = text;
-        //image
-        let imageElement = document.createElement('img');
-        imageElement.src = image;
-        imageElement.classList.add("pokemon-image");
-
-        modal.appendChild(closeButtonElement);
-        modal.appendChild(titleElement);
-        modal.appendChild(contentElement);
-        modal.appendChild(imageElement);
-        modalContainer.appendChild(modal);
-
-        modalContainer.addEventListener('click', (e) => {
-            let target = e.target;
-                if (target === modal-dialog) {
-                 hideModal();
-              }
-            });
-        }
-
-
-    //this shows the modal on click
-    document.querySelector('.pokemon-list').addEventListener('click', () => {
-        showModal();
-    });
-
-
-    */
-
     //function to show modal with pokemon name, details, img
     function showDetails(pokemon){
         loadDetails(pokemon).then(function() {
@@ -201,19 +135,3 @@ pokemonRepository.loadList().then(function() {
         pokemonRepository.addListItem(pokemon);
     });
 });
-
-/* OLD - shouldn't need since Bootstrap has this functionality
-function hideModal() {
-    let modalContainer = document.querySelector('#modal-dialog');
-    modalContainer.classList.remove('is-visible');
-  }
-
-window.addEventListener('keydown', (e) => {
-    let modalContainer = document.querySelector('#modal-dialog');
-    if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
-      hideModal();  
-    }
-});
-*/
-
-//$('#pokemonModal').modal(data-show);
