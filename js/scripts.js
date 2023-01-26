@@ -75,9 +75,9 @@ let pokemonRepository = (function () {
     }
 
 
+    const ModalCntr = $('.modal');
     // NEW showModal function for Bootstrap
     function showModal(pokemon){
-        const ModalCntr = $('.modal');
         let modalBody = $('.modal-body');
         let modalTitle = $('.modal-title');
 
@@ -116,6 +116,10 @@ let pokemonRepository = (function () {
             });
     }
 
+    //Close button function
+    $('.modal-close-btn').on('click', function () {
+        ModalCntr.removeClass('show');
+    });
 
     return {
         getAll: getAll,
@@ -135,9 +139,3 @@ pokemonRepository.loadList().then(function() {
         pokemonRepository.addListItem(pokemon);
     });
 });
-
-$(function () {
-    $('.close').on('click', function () {
-        modalCntr.hide();
-    })
-})

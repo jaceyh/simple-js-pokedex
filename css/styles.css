@@ -1,4 +1,4 @@
-/* || GENERAL STYLES */
+/* GENERAL STYLES */
 
 .brand-title {
   font-size:xx-large;
@@ -43,8 +43,12 @@ button,
     color: #fff;
     font-family: 'Asap Condensed', sans-serif;
     font-size: x-large;
-    align-items: center;
-    }
+  }
+
+.modal-close-btn {
+  width: 100px;
+  border: none;
+}
 
 button:hover {
     background-color: #ffa260;
@@ -62,11 +66,14 @@ button:hover {
   background: rgba(0, 0, 0, 0.5);
 }
 
-.modal-content {
-  background: linear-gradient(to top left, #024, #402);
-  z-index: 999;
+.hide {
+  display: none;
 }
 
-.modal button.close {
-  z-index: 1000;
+.modal-content {
+  background: linear-gradient(to top left, #024, #402);
+}
+
+.top-right {
+  justify-items: right;
 }
