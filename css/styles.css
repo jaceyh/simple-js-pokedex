@@ -1,15 +1,11 @@
 /* GENERAL STYLES */
 
-/* HEADER */
-
-/* lg screens */
-
-button.navbar-toggler {
+.navbar-toggler {
   display: flex;
   width: 70px;
   padding: 10px;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
 }
 
 .brand-title {
@@ -75,7 +71,7 @@ button:hover {
   opacity: 1;
 }
 
-.modal.show {
+.show {
   display: block;
   background: rgba(0, 0, 0, 0.5);
 }
@@ -86,8 +82,4 @@ button:hover {
 
 .modal-content {
   background: linear-gradient(to top left, #024, #402);
-}
-
-.top-right {
-  justify-items: right;
 }
