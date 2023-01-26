@@ -8,6 +8,7 @@ body {
     background: linear-gradient(to bottom right, #024, #402);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    margin-top: 70px;
     padding: 10px;
     font-family:'Asap Condensed', sans-serif;
     font-weight: 400;
