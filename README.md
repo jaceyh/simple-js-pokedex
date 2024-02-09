@@ -1,4 +1,4 @@
-My Pokedex app is a simple web application using HTML, CSS, and JavaScript.
+My Pokedex app is a simple web application using HTML, CSS, and vanilla JavaScript.
 
 It loads data from an external API[^1] and enables the viewing of data points in detail.
 
